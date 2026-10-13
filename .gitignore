@@ -12,3 +12,11 @@ simulacion_completa.json
 importacion_completa.json
 .runtime/
 .validation/
+.env.*
+!.env.example
+*.pyc
+*.db
+*.dump
+*.bak
+artifacts/
+validacion/
