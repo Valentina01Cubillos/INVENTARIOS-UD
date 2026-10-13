@@ -1,0 +1,134 @@
+.sidebar{background:var(--personal-sidebar)}button,.button{background:#287649;color:#fff}button:hover,.button:hover{background:#205f3b;color:#fff}
+.secondary{background:#f2f5f2;color:#4d635b;border-color:#e3eae4}.secondary:hover{background:#e9efe9;color:#334f43}.quiet{background:transparent;color:var(--muted)}.quiet:hover{background:#edf1ed;color:#334f43}
+.danger{background:#ae5057;color:#fff}.danger:hover{background:#963e47;color:#fff}.resume-maintenance{background:var(--personal-accent-soft);color:var(--personal-accent-ink);border-color:var(--personal-accent)}.resume-maintenance:hover{background:var(--personal-accent);color:var(--personal-accent-text)}
+.sidebar nav a.active{background:var(--personal-soft);color:var(--personal-ink)}.sidebar nav a.active:hover{background:var(--personal-soft);color:var(--personal-ink)}.nav-count,.notification-link #request-count{background:var(--personal-accent);color:var(--personal-accent-text)}.sidebar .menu-toggle.secondary{background:#ffffff14;color:#fff;border-color:#ffffff30}.sidebar .menu-toggle.secondary:hover{background:#ffffff24;color:#fff}
+.eyebrow,.lab-link{color:var(--personal-ink)}.laboratory-card{background:linear-gradient(145deg,#fff,var(--personal-soft))}.laboratory-card:hover,.dashboard-card:hover{background:var(--personal-soft);border-color:var(--personal-primary)}
+main>.heading h1,main>.heading .subtitle,.owner-header h1,.owner-header .subtitle,main>.owner-header .eyebrow,main>.heading .eyebrow,main>section>.section-label{color:var(--personal-bg-text)}.panel,.module,.metric,.laboratory-card{color:#334b50}.panel .heading h1,.panel h2{color:var(--navy)}
+.profile-avatar{width:34px;height:34px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid var(--personal-soft)}.profile-link{display:inline-flex;align-items:center;gap:10px}.profile-avatar-preview{width:80px;height:80px;margin-bottom:20px}.profile-cover-preview,.profile-cover{display:block;width:100%;height:200px;object-fit:cover;border-radius:18px;margin-bottom:28px}.profile-cover-preview{height:160px}.color-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:24px 0}.color-grid input[type=color]{width:100%;height:54px;padding:5px;cursor:pointer}.reset-colors{display:flex!important;align-items:center;gap:10px}.reset-colors input{width:auto!important}.form-field a{overflow-wrap:anywhere}.form-field input[type=file]{max-width:100%}
+@media(max-width:600px){.color-grid{grid-template-columns:1fr;gap:18px}.profile-cover{height:140px}.profile-link{gap:7px}}
+@media print{.profile-cover{display:none}body{background:white}main>.heading h1{color:#000}}
+
+/* Institución, fotografías proporcionadas y estados distinguibles. */
+.sidebar .brand,.sidebar .brand small,.sidebar nav>a,.sidebar .admin-navigation summary,.sidebar .admin-navigation a,.sidebar-footer{color:var(--personal-sidebar-text)}
+.brand{align-items:center;gap:10px}.brand img{width:40px;height:auto;max-height:48px;object-fit:contain}.brand small{font-size:9px;line-height:1.55;letter-spacing:.02em;margin-top:5px;font-weight:400}
+.sidebar .menu-toggle.secondary{color:var(--personal-sidebar-text)}
+.institution-header{display:grid;grid-template-columns:minmax(100px,185px) minmax(0,1fr) 74px;gap:24px;padding:14px 0 30px;margin-bottom:30px}.institution-header h1{font-size:30px;letter-spacing:.025em;color:var(--personal-bg-text)}.institution-header p{font-size:13px;color:var(--personal-bg-text);opacity:.8}.institution-header .lab-logo{width:100%;height:auto;max-height:70px;object-fit:contain}.institution-header .university-logo{width:68px;height:auto;max-height:74px;object-fit:contain}
+.dashboard-card{min-height:145px;padding:24px;gap:20px}.dashboard-card img{width:80px;height:72px;object-fit:contain}.dashboard-card strong{font-size:17px}.dashboard-card small{background:#fff1cb;color:#785519}
+.profile-cover,.profile-cover-preview{height:auto;max-height:230px;object-fit:contain;object-position:center;background:#ffffff80}.photo{height:auto;max-height:340px;object-fit:contain}
+.badge[data-state=progress]{background:#e5eefb;color:#315e91}.badge[data-state=warning]{background:#fff0ce;color:#7a5413}.badge[data-state=danger]{background:#fce6e8;color:#9d3546}
+.maintenance-type[data-type=MIC],.maintenance-type[data-type=Correctivo]{background:#fce7e7;color:#9b3f45}.maintenance-type[data-type=MEC]{background:#ffecd9;color:#8a541e}.maintenance-type[data-type=MIP]{background:#e6edff;color:#465a9d}.maintenance-type[data-type=MEP]{background:#f1e8fa;color:#77519a}.maintenance-type[data-type=MIPV],.maintenance-type[data-type=Preventivo]{background:#e1f2e7;color:#35684a}.maintenance-type[data-type=MEPV]{background:#dcf1f3;color:#306c73}
+.metric:nth-child(1){border-top:3px solid #7ba5c7}.metric:nth-child(2){border-top:3px solid #77ad87}.metric:nth-child(3){border-top:3px solid #ce8a8f}.metric:nth-child(4){border-top:3px solid #ddba6e}.metric:nth-child(5){border-top:3px solid #ae9ac7}.metric:nth-child(6){border-top:3px solid #80b7b4}
+@media(max-width:1100px){.institution-header{grid-template-columns:130px minmax(0,1fr) 60px;gap:18px}.institution-header h1{font-size:25px}.institution-header .university-logo{width:55px}.dashboard-card img{width:65px;height:60px}.dashboard-card strong{font-size:15px}}
+@media(max-width:800px){.brand img{width:34px;max-height:40px}.institution-header{grid-template-columns:110px minmax(0,1fr) 44px;gap:12px}.institution-header h1{font-size:22px}.institution-header p{font-size:11px}.institution-header .university-logo{width:42px}.dashboard-card{padding:22px;min-height:125px}.profile-cover{max-height:180px}}
+@media(max-width:550px){.institution-header{grid-template-columns:1fr 60px}.institution-header>div{grid-column:1/-1;grid-row:2;order:initial;width:auto}.institution-header .lab-logo{width:145px;max-height:55px;justify-self:start}.institution-header .university-logo{justify-self:end}.institution-header h1{font-size:26px}.institution-header p{font-size:12px}}
+
+/* Encabezado compacto y navegación con acentos institucionales. */
+.sidebar{background:var(--personal-soft);border-right:1px solid #eadfdf;padding:28px 18px}
+.sidebar .brand{color:var(--personal-ink);font-size:17px;gap:12px;margin-bottom:34px;align-items:flex-start}
+.sidebar .brand img{width:38px;max-height:42px;margin-top:3px}
+.sidebar .brand small{color:#69716f;font-size:10px;line-height:1.5;font-weight:400;letter-spacing:0;margin-top:7px}
+.sidebar nav>a,.sidebar .admin-navigation a{color:#52605d;font-weight:500}
+.sidebar nav a:hover{background:#f1efec;color:#293d36}
+.sidebar nav a.active{background:var(--personal-soft);color:var(--personal-ink);box-shadow:inset 3px 0 var(--personal-primary);font-weight:650}
+.sidebar nav a.active:hover{background:var(--personal-soft);color:var(--personal-ink)}
+.sidebar .admin-navigation summary,.sidebar-footer{color:#68766f}.sidebar-footer,.admin-navigation{border-color:#e8e7e2}
+.sidebar .menu-toggle.secondary{background:#f0eeeb;color:#4b5a52;border-color:#e5e4de}.sidebar .menu-toggle.secondary:hover{background:#e9e6e0;color:#293d36}
+main{max-width:none;width:100%;padding-top:30px}
+.institution-header{display:flex;justify-content:space-between;align-items:center;gap:36px;padding:28px 32px;margin:0 0 30px;background:#fdfefd;border:1px solid #e9ece7;border-radius:20px;box-shadow:0 5px 24px #233c3105;text-align:left;min-height:142px}
+.institution-header .institution-copy{min-width:0;width:auto;order:initial;grid-column:auto;grid-row:auto}
+.institution-header .eyebrow{display:block;font-size:10px;letter-spacing:.12em;color:var(--personal-ink);margin-bottom:8px}
+.institution-header h1{font-size:31px;line-height:1.2;letter-spacing:-.035em;font-weight:650;color:#294658;margin:0 0 8px}
+.institution-header p{font-size:13px;line-height:1.55;color:#6a7972;opacity:1;margin:0;max-width:45ch}
+.institution-header .institution-logos{display:flex;align-items:center;justify-content:flex-end;gap:24px;flex-shrink:0;width:auto;order:initial;grid-column:auto;grid-row:auto}
+.institution-header .lab-logo{width:156px;height:45px;max-height:none;object-fit:contain}
+.institution-header .university-logo{width:62px;height:64px;max-height:none;object-fit:contain}
+.logo-divider{height:46px;width:1px;background:#e7eae4}
+.welcome-heading h2{font-size:19px;font-weight:600}.welcome-heading .subtitle{font-size:13px;line-height:1.6;color:var(--muted)}
+@media(max-width:1100px){.institution-header{padding:26px;gap:24px}.institution-header .institution-logos{gap:16px}.institution-header .lab-logo{width:125px;height:37px}.institution-header .university-logo{width:52px;height:54px}.institution-header h1{font-size:28px}}
+@media(max-width:800px){.sidebar{padding:18px}.sidebar .brand{margin-bottom:0}.institution-header{padding:24px;gap:20px;min-height:0}.institution-header .institution-logos{gap:14px}.institution-header h1{font-size:27px}}
+@media(max-width:600px){.institution-header{flex-direction:column;align-items:flex-start;padding:24px;gap:22px}.institution-header .institution-logos{width:100%;justify-content:flex-start;padding-top:18px;border-top:1px solid #edf0e9;gap:22px}.institution-header .lab-logo{width:135px;height:39px}.institution-header .university-logo{width:48px;height:50px}.logo-divider{height:36px}.institution-header p{font-size:12px}}
+
+/* Escudo institucional legible, sin ampliar más allá de su resolución. */
+.institution-header .university-logo{width:108px;height:112px;max-height:none;padding:6px;background:#fff;border-radius:12px;object-fit:contain}
+.institution-header .institution-logos{gap:26px}.logo-divider{height:64px}
+.sidebar .brand img{width:54px;height:56px;max-height:none;flex-shrink:0;margin-top:0;object-fit:contain}
+.sidebar .brand{gap:10px;font-size:16px}
+@media(max-width:800px){.institution-header .university-logo{width:90px;height:94px}.sidebar .brand img{width:48px;height:50px}}
+@media(max-width:600px){.institution-header .university-logo{width:80px;height:84px}.institution-header .institution-logos{gap:22px}.logo-divider{height:56px}}
+
+/* Títulos en armonía con el color principal del perfil. */
+h1,h2,h3,.institution-header h1,.panel h2,.panel h3,.panel .heading h1,.dashboard-card strong,.module strong,.laboratory-card h2{color:var(--personal-ink)}
+main>.heading h1,.owner-header h1,main>section>.section-label{color:var(--personal-ink)}
+main a:not(.button):not(.dashboard-card):not(.laboratory-card):not(.module),.panel h3 a{color:var(--personal-ink)}
+main,.panel,.module,.metric,.laboratory-card{color:#484b45}
+main>.heading .subtitle,.owner-header .subtitle,.welcome-heading .subtitle{color:#6c7168}
+th{color:#727367;background:#f3f3ed}dt,.muted,.helptext,.form-instructions,td small,.filters label{color:#72766b}
+
+.topbar{justify-content:flex-end}
+
+/* Escala equilibrada: contenido legible y menos altura vacía. */
+body{font-size:15px;line-height:1.6}
+main{padding:28px 32px 36px}
+.heading{gap:20px;margin-bottom:24px}.heading h1{font-size:28px}
+.panel{padding:24px;margin-bottom:24px}.panel>.filters:last-child{margin-bottom:0}
+.sidebar nav>a{font-size:13px;padding:11px 14px}
+.filters{gap:12px}.filters label,.helptext,.form-instructions{font-size:12px}
+th{font-size:11px}td{font-size:14px;padding:16px}
+.inventory-laboratories{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.inventory-laboratories .dashboard-card{min-height:132px;padding:20px;gap:16px;align-items:center}
+.inventory-laboratories .dashboard-card img{width:54px;height:54px}
+.inventory-laboratories .dashboard-card>div{min-width:0;flex:1}
+.inventory-laboratories .dashboard-card strong{font-size:16px;line-height:1.4;overflow-wrap:anywhere;margin-bottom:8px}
+.inventory-laboratories .dashboard-card span:not(.card-arrow){font-size:13px;line-height:1.65}
+.inventory-laboratories .card-arrow{font-size:20px;margin-left:0;flex-shrink:0}
+@media(max-width:1400px){.inventory-laboratories{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:800px){main{padding:24px 18px 32px}.panel{padding:20px}.heading h1{font-size:26px}.inventory-laboratories{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.inventory-laboratories .dashboard-card{padding:18px;gap:12px}.inventory-laboratories .dashboard-card img{width:44px;height:44px}}
+@media(max-width:650px){.inventory-laboratories{grid-template-columns:1fr}.inventory-laboratories .dashboard-card{min-height:120px}.inventory-laboratories .dashboard-card img{width:50px;height:50px}}
+@media print{main{padding:0}.panel{padding:10px}}
+
+/* Proporciones de la referencia: lectura cómoda y tarjetas amplias. */
+@media(min-width:801px){
+  .sidebar{width:264px;padding:30px 18px}
+  .workspace{margin-left:264px}
+  .topbar{height:80px;padding:0 36px}
+  main{padding:32px 36px 40px}
+  .sidebar .brand{font-size:18px;gap:12px;margin-bottom:38px}
+  .sidebar .brand img{width:58px;height:60px}
+  .sidebar .brand small{font-size:11px;line-height:1.5;margin-top:8px}
+  .sidebar nav{gap:8px}
+  .sidebar nav>a{font-size:14px;padding:12px 14px}
+  .sidebar-footer{font-size:12px;line-height:1.9;margin-top:32px;padding-top:28px}
+  .institution-header{min-height:186px;padding:32px 36px;margin-bottom:36px}
+  .institution-header h1{font-size:34px}
+  .institution-header p{font-size:14px}
+  .institution-header .lab-logo{width:164px;height:48px}
+  .institution-header .university-logo{width:112px;height:116px}
+  .institution-header .institution-logos{gap:30px}
+  .welcome-heading{margin-bottom:28px}
+  .welcome-heading h2{font-size:21px}
+  .welcome-heading .subtitle{font-size:14px}
+  .dashboard-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;margin-bottom:34px}
+  .dashboard-card{min-height:160px;padding:28px;gap:24px}
+  .dashboard-card img{width:84px;height:76px}
+  .dashboard-card strong{font-size:19px;line-height:1.4;margin-bottom:9px}
+  .dashboard-card span:not(.card-arrow){font-size:14px;line-height:1.7}
+  .dashboard-card small{font-size:12px;padding:4px 11px}
+  .inventory-laboratories{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+  .inventory-laboratories .dashboard-card{min-height:150px;padding:24px;gap:20px}
+  .inventory-laboratories .dashboard-card img{width:64px;height:64px}
+  .inventory-laboratories .dashboard-card strong{font-size:17px}
+}
+@media(min-width:801px) and (max-width:1100px){
+  .sidebar{width:244px}.workspace{margin-left:244px}
+  .sidebar .brand{font-size:16px;gap:10px}.sidebar .brand img{width:50px;height:52px}
+  main{padding:28px 24px}.institution-header{padding:28px;gap:22px}
+  .institution-header h1{font-size:29px}.institution-header .lab-logo{width:125px;height:37px}
+  .institution-header .university-logo{width:88px;height:92px}.institution-header .institution-logos{gap:18px}
+  .dashboard-card{padding:22px;gap:16px}.dashboard-card img{width:64px;height:62px}.dashboard-card strong{font-size:17px}
+}
+@media print{.workspace{margin:0}}
+
+.topbar{height:44px;min-height:44px;padding-top:4px;padding-bottom:4px}
+.topbar .profile-avatar{width:28px;height:28px}
+.topbar .quiet{min-height:32px;padding:4px 8px}
+@media(max-width:800px){.topbar{height:auto;min-height:44px;padding:4px 18px}}

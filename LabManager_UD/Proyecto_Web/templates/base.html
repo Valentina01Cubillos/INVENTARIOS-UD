@@ -1,0 +1,19 @@
+{% load static %}<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{% block title %}LabManager UD{% endblock %}</title><link rel="stylesheet" href="{% static 'app.css' %}?v=20261013u"><link rel="stylesheet" href="{% static 'polish.css' %}?v=20261013u"><script defer src="{% static 'app.js' %}?v=20261013u"></script><link rel="stylesheet" href="{% static 'personal.css' %}?v=20261013u"><link rel="stylesheet" href="{% static 'professional.css' %}?v=20261013u">{% include 'tema.html' %}</head>
+<body><aside class="sidebar"><a class="brand" href="{% url 'inicio' %}"><img src="{% static 'identity/escudo_ud.png' %}" alt=""><span>LabManager UD<small>Universidad Distrital<br>Francisco José de Caldas</small></span></a>
+{% if user.is_authenticated %}<button class="menu-toggle secondary" aria-expanded="false" aria-controls="main-navigation">Menú de navegación</button><nav id="main-navigation" aria-label="Navegación principal">
+<a href="{% url 'inicio' %}">Inicio</a>
+{% if perms.lab.view_equipo %}<a href="{% url 'equipos' %}">Equipos e inventario</a><a href="{% url 'hojas_vida' %}">Hojas de vida</a>{% endif %}
+{% if perms.lab.view_equipo %}<a class="notification-link" href="{% url 'traslados' %}"><span>Traslados</span><span id="transfer-count" class="nav-count" aria-label="Traslados pendientes" {% if not traslados_pendientes %}hidden{% endif %}>{{ traslados_pendientes }}</span></a>{% endif %}<a class="notification-link" href="{% url 'solicitudes' %}"><span>Solicitudes</span><span id="request-count" class="nav-count" aria-label="Solicitudes pendientes" {% if not solicitudes_pendientes %}hidden{% endif %}>{{ solicitudes_pendientes }}</span></a>
+{% if perms.lab.view_mantenimiento %}<a href="{% url 'historial' %}">Mantenimientos</a><a href="{% url 'estadisticas' %}">Reportes y estadísticas</a>{% endif %}
+<a href="{% url 'trabajos' %}">Mis documentos</a>
+{% if mostrar_administracion %}<details class="admin-navigation"><summary>Administración</summary>
+{% if perms.lab.view_laboratorio %}<a href="{% url 'laboratorios' %}">Laboratorios</a>{% endif %}
+{% if perms.lab.importar_datos %}<a href="{% url 'importacion' %}">Importar datos</a><a href="{% url 'registros' %}">Revisar históricos</a>{% endif %}
+{% if perms.auth.view_user %}<a href="{% url 'usuarios' %}">Usuarios y roles</a>{% endif %}
+{% if perms.lab.view_auditoria %}<a href="{% url 'auditoria' %}">Registro de cambios</a>{% endif %}
+{% if user.is_staff %}<a href="/admin/">Administración avanzada</a>{% endif %}
+</details>{% endif %}</nav><div class="sidebar-footer">Facultad de Ingeniería<br>Coordinación de Laboratorios</div>{% endif %}</aside>
+<div class="workspace"><header class="topbar">{% if user.is_authenticated %}<div class="user-actions"><a class="profile-link" href="{% url 'perfil' %}">{% if apariencia.avatar %}<img class="profile-avatar" src="{% url 'foto_perfil' 'avatar' %}" alt="">{% endif %}{{ user.get_full_name|default:user.username }}</a><form method="post" action="{% url 'logout' %}">{% csrf_token %}<button class="quiet">Cerrar sesión</button></form></div>{% endif %}</header>
+<main>{% if user.is_authenticated %}<span id="transfer-alert" data-url="{% url 'alertas_traslado' %}" hidden></span>{% endif %}{% for message in messages %}<div class="notice {{ message.tags }}" role="status">{{ message }}</div>{% endfor %}{% block content %}{% endblock %}</main><footer class="page-footer">LabManager UD · Universidad Distrital Francisco José de Caldas</footer></div></body></html>

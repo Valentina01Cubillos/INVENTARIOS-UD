@@ -1,0 +1,19 @@
+{% extends 'base.html' %}{% block content %}
+<div class="heading"><div><div class="eyebrow">MANTENIMIENTO EN CURSO</div><h1>Registrar trabajo realizado</h1><p class="subtitle">{{ solicitud.codigo }} · {{ solicitud.equipo_nombre }}</p></div></div>
+<section class="panel"><dl><dt>Equipo</dt><dd>{{ solicitud.equipo_nombre }}</dd>{% if solicitud.equipo_id %}<dt>Laboratorio</dt><dd>{{ solicitud.equipo.laboratorio }}</dd>{% elif solicitud.datos_legacy.laboratorio %}<dt>Laboratorio</dt><dd>{{ solicitud.datos_legacy.laboratorio }}</dd>{% endif %}{% if not solicitud.equipo_id and solicitud.datos_legacy.placa %}<dt>Placa</dt><dd>{{ solicitud.datos_legacy.placa }}</dd>{% endif %}<dt>Tipo</dt><dd>{{ solicitud.get_tipo_display }}</dd><dt>A cargo de</dt><dd>{{ user.get_full_name|default:user.username }}</dd><dt>Razón de mantenimiento</dt><dd>{{ solicitud.descripcion }}</dd></dl></section>
+<section class="panel form-panel"><form method="post">{% csrf_token %}{{ form.non_field_errors }}{% for hidden in form.hidden_fields %}{{ hidden }}{{ hidden.errors }}{% endfor %}
+<div class="form-grid">
+{% include 'mantenimiento_campo.html' with field=form.diagnostico %}
+{% include 'mantenimiento_campo.html' with field=form.especificaciones %}
+{% include 'mantenimiento_campo.html' with field=form.estado %}
+</div>
+<details class="optional-fields" {% if form.errors %}open{% endif %}><summary><span>Información adicional <small>Opcional</small></span><span class="disclosure-chevron" aria-hidden="true"></span></summary><div class="form-grid optional-fields-body">
+{% include 'mantenimiento_campo.html' with field=form.fecha %}
+{% include 'mantenimiento_campo.html' with field=form.observaciones %}
+{% include 'mantenimiento_campo.html' with field=form.empresa %}
+{% include 'mantenimiento_campo.html' with field=form.garantia %}
+{% include 'mantenimiento_campo.html' with field=form.repuestos %}
+{% include 'mantenimiento_campo.html' with field=form.enlace_repuesto %}
+</div></details><p class="muted">La fecha de hoy y los datos de la solicitud ya están completados.</p>
+<div class="actions"><button>Guardar y finalizar mantenimiento</button><a class="button secondary" href="{% url 'detalle_solicitud' solicitud.pk %}">Volver a la solicitud</a></div>
+</form><form method="post" action="{% url 'liberar_mantenimiento' solicitud.pk %}" style="margin-top:18px">{% csrf_token %}<button class="danger">Cancelar mantenimiento</button><span class="helptext">Deja de atenderlo y permite que otro usuario lo tome. Los cambios sin guardar se descartarán.</span></form></section>{% endblock %}

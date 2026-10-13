@@ -1,0 +1,610 @@
+{
+  "files": [
+    {
+      "path": "plantillas/HojaVida.xlsx",
+      "source_area": "desktop-resources",
+      "source_path": "plantillas/HojaVida.xlsx",
+      "bytes": 98689,
+      "sha256": "53d07a943ebfd1047b9ccc664ca0dcfde48ff23d0171b522e21a97ab52e83f3e"
+    },
+    {
+      "path": "base_datos/BASE_DATOS.xlsx",
+      "source_area": "desktop-resources",
+      "source_path": "base_datos/BASE_DATOS.xlsx",
+      "bytes": 13887,
+      "sha256": "bd928c7742beb118eddf5e022c817eeccb5c38bbbcbd5c47a37df3ea6fc78448"
+    },
+    {
+      "path": "mantenimientos/REPORTE_MANTENIMIENTOS.xlsx",
+      "source_area": "desktop-resources",
+      "source_path": "mantenimientos/REPORTE_MANTENIMIENTOS.xlsx",
+      "bytes": 111612,
+      "sha256": "2134637bc3e0ceac14f23d505d19f7afa71253228ff5332d07dbbbb5e317159b"
+    },
+    {
+      "path": "fotos/ACER_V226HQL.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/ACER_V226HQL.jpg",
+      "bytes": 3711,
+      "sha256": "acd31b0c0e38d1b71c5046b937f2eff1c6d06faac7a9520f9a9aed9bcd4061d6"
+    },
+    {
+      "path": "fotos/ADVANTECH_USB_4753.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/ADVANTECH_USB_4753.jpg",
+      "bytes": 4564,
+      "sha256": "5e64fc30fef5d5447a77996398d2a1f5b082994c920d814235d9944b13faa5bf"
+    },
+    {
+      "path": "fotos/ADVANTECH_USB_4754.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/ADVANTECH_USB_4754.jpg",
+      "bytes": 4166,
+      "sha256": "b141e2a08d53ab89d837bfb44d27fd957034214f020a25f8b1563260ab6eeb02"
+    },
+    {
+      "path": "fotos/ADVANTECH_USB_4755.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/ADVANTECH_USB_4755.jpg",
+      "bytes": 4564,
+      "sha256": "5e64fc30fef5d5447a77996398d2a1f5b082994c920d814235d9944b13faa5bf"
+    },
+    {
+      "path": "fotos/ADVANTECH_USB_4761.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/ADVANTECH_USB_4761.jpg",
+      "bytes": 35918,
+      "sha256": "b0ab776d9f9558cce3ef6af9477ed2d57e00281ccb8dcb968c623b61e53f2e22"
+    },
+    {
+      "path": "fotos/AEMC_INSTRUMENTS_6472.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/AEMC_INSTRUMENTS_6472.jpg",
+      "bytes": 39929,
+      "sha256": "ebc0637bdd9138d9448c10d13ceb995b9f12b4b66dd3df43012168c44826b675"
+    },
+    {
+      "path": "fotos/ANVIZ_VF30.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/ANVIZ_VF30.jpg",
+      "bytes": 10355,
+      "sha256": "fd94115dabd1f01a9e02ef7150048bf61fdd5643dc0a5cea6f9b4557f61a65a6"
+    },
+    {
+      "path": "fotos/BAKU_702B.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/BAKU_702B.jpg",
+      "bytes": 21051,
+      "sha256": "bbfdaf4df7bab132534d2a380c3b78df79955bc54d9f65f4f0d9c1007b0b7d55"
+    },
+    {
+      "path": "fotos/BK_369B.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/BK_369B.jpg",
+      "bytes": 87355,
+      "sha256": "2feb88fbeec268a3823af5560072e8308d206e628453012afd06a3c1a9ffddc6"
+    },
+    {
+      "path": "fotos/COMPUMAX_ML2024CM.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/COMPUMAX_ML2024CM.jpg",
+      "bytes": 3236,
+      "sha256": "dc82f941b2e9804510c6af7054637db6a9c4349d2436660e7318dcac1ed47ca3"
+    },
+    {
+      "path": "fotos/DELL.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/DELL.jpg",
+      "bytes": 6758,
+      "sha256": "f8bf4646436280d65366a5465fb33679015736d5e506310a8c193bb90c38cad0"
+    },
+    {
+      "path": "fotos/DELL_E178WFPC.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/DELL_E178WFPC.jpg",
+      "bytes": 3424,
+      "sha256": "91d9598950a4275edc2bf95513be40432156626dd5f5850c2cbe1a06cdd7aa4a"
+    },
+    {
+      "path": "fotos/DELL_KB212_B.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/DELL_KB212_B.jpg",
+      "bytes": 6758,
+      "sha256": "f8bf4646436280d65366a5465fb33679015736d5e506310a8c193bb90c38cad0"
+    },
+    {
+      "path": "fotos/DELL_LATITUDE_3410.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/DELL_LATITUDE_3410.jpg",
+      "bytes": 11901,
+      "sha256": "9ce11e56ca4ddafe8acc61cb72dcccbfb957744cbc84a55b78b2f06add49a581"
+    },
+    {
+      "path": "fotos/DELL_PP212HF.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/DELL_PP212HF.jpg",
+      "bytes": 6622,
+      "sha256": "47970fb2a14433eef8e08f5cc346ff5be7e0829b921d013c1f29f8013257a56d"
+    },
+    {
+      "path": "fotos/ENCORE_ENH708_MIN.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/ENCORE_ENH708_MIN.jpg",
+      "bytes": 16398,
+      "sha256": "ee557b540a4b616c7f0e1c45c84488df50c5ab30189587317eea5a4218a4cac8"
+    },
+    {
+      "path": "fotos/ERASMUS_EM_67.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/ERASMUS_EM_67.jpg",
+      "bytes": 41346,
+      "sha256": "41ac70abf6fa4783444a8e219f428127e5347526636586e28b41952ba101e7c7"
+    },
+    {
+      "path": "fotos/EXTECH_407026.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/EXTECH_407026.jpg",
+      "bytes": 13696,
+      "sha256": "10e6af2626f2dcfb095cf1c42f1863ccdfef13eb9f306f7c53c8d6aca434c7d7"
+    },
+    {
+      "path": "fotos/FLUKE_115.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/FLUKE_115.jpg",
+      "bytes": 23280,
+      "sha256": "03c6b975c9cbac00af41c35c054ea33f91a317fb3a892a9eff28bc3b8e67b5ef"
+    },
+    {
+      "path": "fotos/FLUKE_179.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/FLUKE_179.jpg",
+      "bytes": 33684,
+      "sha256": "9ce990dfdaa944ca738a24d46efe6d2d63e6047c6b71c7bc3ece00f13dc41159"
+    },
+    {
+      "path": "fotos/FLUKE_I400S.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/FLUKE_I400S.jpg",
+      "bytes": 13889,
+      "sha256": "bf0c123767345bb05d1fd913da7fd0b7cc4e824a3d502bcf921ceffd9d73f89a"
+    },
+    {
+      "path": "fotos/HEWLETT_PACKARD_8656B.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/HEWLETT_PACKARD_8656B.jpg",
+      "bytes": 27942,
+      "sha256": "4f9d3dc4587e598fe6abf18a1ff382dbb99036852df425124c1fe5a86e2b7237"
+    },
+    {
+      "path": "fotos/HP_4274A.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/HP_4274A.jpg",
+      "bytes": 52603,
+      "sha256": "74b5d59ad99fe6c7aadab779adecad9e24cee2dac355b9bba5b0dbdbe66ee5b1"
+    },
+    {
+      "path": "fotos/HP_8752A.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/HP_8752A.jpg",
+      "bytes": 178372,
+      "sha256": "3037721d76d7a697e62f9de44fcda22ea265e0ff3f3ee944281481c02f93acab"
+    },
+    {
+      "path": "fotos/HP_P244_23_8_INCH_DISPLAY.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/HP_P244_23_8_INCH_DISPLAY.jpg",
+      "bytes": 6938,
+      "sha256": "a37f61424143678baa5e34c0d5ffdb01f150c49c0af1d3069e97f103b864513c"
+    },
+    {
+      "path": "fotos/KADAK_SCANMATE_I1150.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/KADAK_SCANMATE_I1150.jpg",
+      "bytes": 11900,
+      "sha256": "1281c031f5e2e9a7628a0bdba9f82d8601ecb8b0b75b8723c2b3c1f3cf58183c"
+    },
+    {
+      "path": "fotos/LD_437041.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/LD_437041.jpg",
+      "bytes": 5307,
+      "sha256": "330f496ad9e00d4c876cab22cb88d85445fa12bf892676d72eef718a47f32162"
+    },
+    {
+      "path": "fotos/LENOVO_2014_ALL.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/LENOVO_2014_ALL.jpg",
+      "bytes": 16910,
+      "sha256": "08407e0779544bf680d721be387415abda3dccea636b5118fafbe0eefbb25ad9"
+    },
+    {
+      "path": "fotos/LENOVO_LED_E2223.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/LENOVO_LED_E2223.jpg",
+      "bytes": 15130,
+      "sha256": "8256c1a3879bd6a45889c411be65dc002ebab5e626af67633f7470ea3372e956"
+    },
+    {
+      "path": "fotos/LENOVO_LXH_EKB_10YA.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/LENOVO_LXH_EKB_10YA.jpg",
+      "bytes": 29228,
+      "sha256": "0ab779c2ab136c15d9d082123713089104224c4d8ad9dcb57ec2d0717b381c72"
+    },
+    {
+      "path": "fotos/LENOVO_THINKCENTRO_M700.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/LENOVO_THINKCENTRO_M700.jpg",
+      "bytes": 13715,
+      "sha256": "5e6e2e5753a9c0f8b9d2c434f331752f0e0bfa41f7e2821b14f79bf088ebdda9"
+    },
+    {
+      "path": "fotos/LEYBOLD.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/LEYBOLD.jpg",
+      "bytes": 20072,
+      "sha256": "320a048e7e2e1f71b6f380af58b39539a0a31c46e81bb6492a483a40cbe3afef"
+    },
+    {
+      "path": "fotos/LEYBOLD_524_010.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/LEYBOLD_524_010.jpg",
+      "bytes": 13778,
+      "sha256": "982d3d5901c27ba9ff5d9b0fb6b27749352aa5f0ccea083e1e0f89adb3a68eed"
+    },
+    {
+      "path": "fotos/MARCONI_INSTRUMENTS_6950.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/MARCONI_INSTRUMENTS_6950.jpg",
+      "bytes": 24963,
+      "sha256": "0f1236055705d1c1a6fd9931d931674a74ed9ea7639e38efd3ddf48c43195552"
+    },
+    {
+      "path": "fotos/METREL_A_1378.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/METREL_A_1378.jpg",
+      "bytes": 30854,
+      "sha256": "1bfc691570cdfe71a0efea485aa23168e8368674343ef48eb1e6888f2800a6b0"
+    },
+    {
+      "path": "fotos/METREL_MI_3108.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/METREL_MI_3108.jpg",
+      "bytes": 44678,
+      "sha256": "c3fe8d4cd4ef0471f6223c12c91d79644a7a9d588ee1ef96e877670b6a3e744f"
+    },
+    {
+      "path": "fotos/MICROCHIP_PICKIT_3.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/MICROCHIP_PICKIT_3.jpg",
+      "bytes": 16274,
+      "sha256": "488d646aff35ddf581ad69fe0c9a983fe3d64e09d6043abff3841d8cc4149888"
+    },
+    {
+      "path": "fotos/MINIPA_MO_1150D.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/MINIPA_MO_1150D.jpg",
+      "bytes": 21896,
+      "sha256": "c999337d82d35cb552f140e7b4d12638046f2eb18692e50ad298ea70d6aecec0"
+    },
+    {
+      "path": "fotos/NEWLAND_NLS_HR100.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/NEWLAND_NLS_HR100.jpg",
+      "bytes": 13166,
+      "sha256": "97281bdff01057704a7b82c62572a54beed6f862f7cd4d5ed4c88ce3a9a2e867"
+    },
+    {
+      "path": "fotos/NEXYS_A7_100T.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/NEXYS_A7_100T.jpg",
+      "bytes": 85628,
+      "sha256": "1828e16ae4dc6739d4c00f638a9826d34567e4cacf89a0ae88e2fad554388414"
+    },
+    {
+      "path": "fotos/ONESCREEN.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/ONESCREEN.jpg",
+      "bytes": 29035,
+      "sha256": "313cf43c47afaa24ff93c32e760577ee22ccc0917ceefc7ce3205c4d0c61f462"
+    },
+    {
+      "path": "fotos/OWON_HDS272S.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/OWON_HDS272S.jpg",
+      "bytes": 15674,
+      "sha256": "f23ad0a7bb34c55794f132f88e7776a573a64f39ed9294f6431fcc7f847015fb"
+    },
+    {
+      "path": "fotos/PEAKTEACH_6010_D.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/PEAKTEACH_6010_D.jpg",
+      "bytes": 36008,
+      "sha256": "7306e8f3513ebb5a71f54aa6440f09320cb391410e532f27705860ce0b6b1524"
+    },
+    {
+      "path": "fotos/PEAKTEACH_6075.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/PEAKTEACH_6075.jpg",
+      "bytes": 54192,
+      "sha256": "fd84ce5d962d8284d5842e122353700a4eae97508b810266e3ccf814805cb0dc"
+    },
+    {
+      "path": "fotos/PEAKTECH.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/PEAKTECH.jpg",
+      "bytes": 11439,
+      "sha256": "454a3c35545f61b0a0b1a2ef17d4aee38ebce18244ee3955b4bf61034599372c"
+    },
+    {
+      "path": "fotos/PEAKTECH_1625.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/PEAKTECH_1625.jpg",
+      "bytes": 6932,
+      "sha256": "7fae7a32de6dd3783e55e1f9b0ab2ceead88dea5b2105cd9968602a144c185f7"
+    },
+    {
+      "path": "fotos/PEAKTECH_2170.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/PEAKTECH_2170.jpg",
+      "bytes": 25799,
+      "sha256": "b7cd498f7a34288965e80ff136a511432997926ce569ed3e3618752ac6df14f7"
+    },
+    {
+      "path": "fotos/PEAKTECH_2530.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/PEAKTECH_2530.jpg",
+      "bytes": 21304,
+      "sha256": "8b494ec132f059a4a8f8fa9cd6b4947f52f71483eee109d0646a9aa8ba8dd6b1"
+    },
+    {
+      "path": "fotos/PEAKTECH_2685.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/PEAKTECH_2685.jpg",
+      "bytes": 19239,
+      "sha256": "cefd6b6b4cf836694a3a235bf214698b87ed5db77ed0de919d86ba7c2c3b9f34"
+    },
+    {
+      "path": "fotos/PEAKTECH_2785.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/PEAKTECH_2785.jpg",
+      "bytes": 20432,
+      "sha256": "d1d81d4966c8b32ace968074c6b427b5a0b6e4ea4aa2b20b199acf7d574a0158"
+    },
+    {
+      "path": "fotos/PEAKTECH_3270.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/PEAKTECH_3270.jpg",
+      "bytes": 17236,
+      "sha256": "414d688903559bc4d48179eaf137f07c16af459bde03d357f033c8a900a44576"
+    },
+    {
+      "path": "fotos/PEAKTECH_3360_DMM.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/PEAKTECH_3360_DMM.jpg",
+      "bytes": 29053,
+      "sha256": "e36d472113e9c0d177e05304ea6807b211f30187e4b520356e948883446e4135"
+    },
+    {
+      "path": "fotos/PEAKTECH_5086.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/PEAKTECH_5086.jpg",
+      "bytes": 13191,
+      "sha256": "775b2b5b1a994facd6ac25c6328a2b20c6f75fdc84e020554c1f3c5f2040ee64"
+    },
+    {
+      "path": "fotos/PEAKTECH_6010_D.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/PEAKTECH_6010_D.jpg",
+      "bytes": 59079,
+      "sha256": "1efc9e38fcc991be093838e76e09c635391e8048228ed62bdfdea5a129010bf4"
+    },
+    {
+      "path": "fotos/PEAKTECH_6010D.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/PEAKTECH_6010D.jpg",
+      "bytes": 36008,
+      "sha256": "7306e8f3513ebb5a71f54aa6440f09320cb391410e532f27705860ce0b6b1524"
+    },
+    {
+      "path": "fotos/PEAKTECH_6075.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/PEAKTECH_6075.jpg",
+      "bytes": 54192,
+      "sha256": "fd84ce5d962d8284d5842e122353700a4eae97508b810266e3ccf814805cb0dc"
+    },
+    {
+      "path": "fotos/PEAKTECH_8000.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/PEAKTECH_8000.jpg",
+      "bytes": 6953,
+      "sha256": "b60853d4f0436234964965e7bdea7f75b4bf30b92054fa70683a17b1a7a64391"
+    },
+    {
+      "path": "fotos/QUEST_TECHNOLOGIES.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/QUEST_TECHNOLOGIES.jpg",
+      "bytes": 12449,
+      "sha256": "d9b6cbaf0f8de42ac70c14dc043f442ccd6ec07ac1ff84b6e784ce819498faf2"
+    },
+    {
+      "path": "fotos/QUEST_TECHNOLOGIES_NOISEPRO.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/QUEST_TECHNOLOGIES_NOISEPRO.jpg",
+      "bytes": 16913,
+      "sha256": "e0f03e8d24ac34926db713064daedb82e0f6b8124d97038b0b5addda9c309c93"
+    },
+    {
+      "path": "fotos/RIGOL_DG4102.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/RIGOL_DG4102.jpg",
+      "bytes": 85131,
+      "sha256": "c909de976487bb98c6996521d4adf39bf033221a5917a683120fd95e4daa8f98"
+    },
+    {
+      "path": "fotos/RIGOL_DG922_PRO.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/RIGOL_DG922_PRO.jpg",
+      "bytes": 32086,
+      "sha256": "cd50a33cf22c2944b4df0a0c0b6a366b5e8a844cfb9780382f16942ce7ac74f9"
+    },
+    {
+      "path": "fotos/RIGOL_DHO924S.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/RIGOL_DHO924S.jpg",
+      "bytes": 216831,
+      "sha256": "5ce90269cf97b50705fafa9ad04721c3c729f54a859d14f15975ccfaab699f48"
+    },
+    {
+      "path": "fotos/RIGOL_DM3068.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/RIGOL_DM3068.jpg",
+      "bytes": 16718,
+      "sha256": "49b1ffa4dcccc118874953cff932529d7f8468596929baa1b6b4eb987203a286"
+    },
+    {
+      "path": "fotos/RIGOL_DP832.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/RIGOL_DP832.jpg",
+      "bytes": 76702,
+      "sha256": "3192a017d5a6e61451276941fae3600951b7bef5ce68b3ff30cf3f28c12fb513"
+    },
+    {
+      "path": "fotos/RIGOL_DS1104Z_S_PLUS.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/RIGOL_DS1104Z_S_PLUS.jpg",
+      "bytes": 82065,
+      "sha256": "3774bb19fec6e01f37185520e1aa58f56d7ca623e9318fc6ebfcf247aca2128c"
+    },
+    {
+      "path": "fotos/RIGOL_MSO1104.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/RIGOL_MSO1104.jpg",
+      "bytes": 64179,
+      "sha256": "cce647ab6a1eb14a252c7dc2a891b5b522e5bac6361c4b886de39c87e079b84d"
+    },
+    {
+      "path": "fotos/RIGOL_MSO8074A.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/RIGOL_MSO8074A.jpg",
+      "bytes": 33208,
+      "sha256": "99355d4243506e5fc0bf28466be8daabd948298ac1a298806b4c9963f5f95dee"
+    },
+    {
+      "path": "fotos/RIGOL_RP1025D.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/RIGOL_RP1025D.jpg",
+      "bytes": 17729,
+      "sha256": "c0e5674af25abb79d9095e6e1a053928eb2cb9a14d58f688c53bd33d65068d94"
+    },
+    {
+      "path": "fotos/SAMSUNG_UN40D5500RM.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/SAMSUNG_UN40D5500RM.jpg",
+      "bytes": 7404,
+      "sha256": "ccdefebe626fd7420a85825133594753093a017acd7213ab0b40c60095f04c41"
+    },
+    {
+      "path": "fotos/SIGLENT_SDG6052X.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/SIGLENT_SDG6052X.jpg",
+      "bytes": 29211,
+      "sha256": "d8cff5ae537e2450a44aaa95d81f6838feedcfeb9839e37054631a68389ef045"
+    },
+    {
+      "path": "fotos/SIN_MARCA.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/SIN_MARCA.jpg",
+      "bytes": 36649,
+      "sha256": "2dde3f679eb8bfbfb5bce1d9d7b39184da7a391bb890d9e9e3fe4d9d0459c9cf"
+    },
+    {
+      "path": "fotos/SMARTBOARD.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/SMARTBOARD.jpg",
+      "bytes": 32383,
+      "sha256": "2a11a6a47c031227c682c3d4c3825b49e97671f83aac302a98a0a8df52735a29"
+    },
+    {
+      "path": "fotos/SONY.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/SONY.jpg",
+      "bytes": 5078,
+      "sha256": "93d03bb1496c119909e8c38829816677fe45aa0e70470f9b84ebb28cdaeb7942"
+    },
+    {
+      "path": "fotos/TECTRONIX_PS280.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/TECTRONIX_PS280.jpg",
+      "bytes": 32634,
+      "sha256": "7ae04cc796ad88cdaf1fa44b81d41d42220a830d81a348ac73e917cca5683a63"
+    },
+    {
+      "path": "fotos/VIEWSONIC.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/VIEWSONIC.jpg",
+      "bytes": 40476,
+      "sha256": "c73dbe4c0a90ca1c1b7e1852e0b7f7ae8b3d256210ee5d6a2f607ae222137d8b"
+    },
+    {
+      "path": "fotos/VIEWSONIC_VS18106.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/VIEWSONIC_VS18106.jpg",
+      "bytes": 27585,
+      "sha256": "93f78835b6a91c9a3c6b5605f2c3f73c56914c67ebcbb966440aaf5578cb3696"
+    },
+    {
+      "path": "fotos/XILINX_3AN_FPGA.jpg",
+      "source_area": "desktop-resources",
+      "source_path": "fotos/XILINX_3AN_FPGA.jpg",
+      "bytes": 36274,
+      "sha256": "dc6640142fb6136ce3eaa00fb8513ab307430359b121390c91ecc3e2d4e76cea"
+    },
+    {
+      "path": "inventarios/603-Electrónica A.xlsx",
+      "source_area": "inventory-sources",
+      "source_path": "603-Electrónica A.xlsx",
+      "bytes": 204994,
+      "sha256": "d4786cb22ed6b883fce55cbb9ce76adea684653755872cefa9f122c2e575aa60"
+    },
+    {
+      "path": "inventarios/604-Electrónica B.xlsx",
+      "source_area": "inventory-sources",
+      "source_path": "604-Electrónica B.xlsx",
+      "bytes": 205605,
+      "sha256": "81ceab32b3721b06bba45bb6346067f3610448b19e0e73a40ef12d6a1855f546"
+    },
+    {
+      "path": "inventarios/606 - Maquinas A.xlsx",
+      "source_area": "inventory-sources",
+      "source_path": "606 - Maquinas A.xlsx",
+      "bytes": 87187,
+      "sha256": "73b2878d71ce0f0015f2308cc4f12cd872c007ece63b93c0b0b79ac7dbd8d450"
+    },
+    {
+      "path": "inventarios/607-Circuitos Eléctricos A.xlsx",
+      "source_area": "inventory-sources",
+      "source_path": "607-Circuitos Eléctricos A.xlsx",
+      "bytes": 206221,
+      "sha256": "8c85dae6164afeac1753eb565c72feed9b5f6f9023a9b538ef60fd46d913535d"
+    },
+    {
+      "path": "inventarios/609-ALMACÉN LABORATORIOS.xlsx",
+      "source_area": "inventory-sources",
+      "source_path": "609-ALMACÉN LABORATORIOS.xlsx",
+      "bytes": 267222,
+      "sha256": "cc68b3729ccd27bf4beac884e8acb11f0e203714e624f9871a2a451a8639a18c"
+    },
+    {
+      "path": "inventarios/706-Bodega electrica y electronica (equipos movidos de almacen septiembre 2026).xlsx",
+      "source_area": "inventory-sources",
+      "source_path": "706-Bodega electrica y electronica (equipos movidos de almacen septiembre 2026).xlsx",
+      "bytes": 79612,
+      "sha256": "9afff6ad4021441b1aecac52b01254d6b180539c208dda9cddbbd965dec84966"
+    }
+  ],
+  "file_count": 86,
+  "total_bytes": 3654459,
+  "original_files_checked": 321,
+  "originals_unchanged": true
+}

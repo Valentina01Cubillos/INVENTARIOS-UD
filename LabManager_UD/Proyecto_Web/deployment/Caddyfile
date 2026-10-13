@@ -1,0 +1,10 @@
+# Reemplace el dominio por uno controlado por la institucion.
+labmanager.example.edu {
+    handle_path /static/* {
+        root * C:/LabManager/Proyecto_Web/staticfiles
+        file_server
+    }
+    handle {
+        reverse_proxy 127.0.0.1:8000
+    }
+}
