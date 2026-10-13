@@ -1,0 +1,59 @@
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: labmanager
+      POSTGRES_USER: labmanager_app
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?Defina DB_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U labmanager_app -d labmanager"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    restart: unless-stopped
+  web:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile
+    environment:
+      DJANGO_SECRET_KEY: ${DJANGO_SECRET_KEY:?Defina DJANGO_SECRET_KEY}
+      DJANGO_DEBUG: "false"
+      DJANGO_ALLOWED_HOSTS: ${LABMANAGER_HOST:?Defina LABMANAGER_HOST}
+      DJANGO_CSRF_TRUSTED_ORIGINS: https://${LABMANAGER_HOST}
+      DB_ENGINE: postgresql
+      DB_NAME: labmanager
+      DB_USER: labmanager_app
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_HOST: db
+      DB_PORT: "5432"
+      PDF_BACKEND: native
+    volumes:
+      - private_media:/app/Proyecto_Web/private_media
+      - staticfiles:/app/Proyecto_Web/staticfiles
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+  proxy:
+    image: caddy:2
+    environment:
+      LABMANAGER_HOST: ${LABMANAGER_HOST}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile.docker:/etc/caddy/Caddyfile:ro
+      - staticfiles:/srv/static:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - web
+    restart: unless-stopped
+volumes:
+  postgres_data:
+  private_media:
+  staticfiles:
+  caddy_data:
+  caddy_config:

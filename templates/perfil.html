@@ -1,0 +1,13 @@
+{% extends 'base.html' %}{% block content %}
+<div class="heading"><div><div class="eyebrow">TU ESPACIO</div><h1>Mi perfil</h1><p class="subtitle">Personaliza tus colores y fotografías. Se guardan solo para tu cuenta.</p></div><a class="button secondary" href="{% url 'password_change' %}">Cambiar contraseña</a></div>
+<form method="post" enctype="multipart/form-data" class="form-panel">{% csrf_token %}
+<section class="panel"><h2>Mis datos</h2>{{ form.non_field_errors }}<div class="form-grid">{% for field in form %}{% include 'mantenimiento_campo.html' %}{% endfor %}</div></section>
+<section class="panel"><h2>Colores de mi interfaz</h2><p class="muted">El estilo inicial usa rojo y amarillo. Elige tus propios colores para los botones, el menú y el fondo.</p>{{ preferencias.non_field_errors }}
+<div class="color-grid">{% for field in preferencias %}{% if field.name == 'primario' or field.name == 'secundario' or field.name == 'fondo' %}{% include 'mantenimiento_campo.html' %}{% endif %}{% endfor %}</div>
+<label class="reset-colors"><input type="checkbox" name="restaurar" value="si"> Volver a los colores institucionales al guardar</label></section>
+<section class="panel"><h2>Mis fotografías</h2><p class="muted">JPG, PNG o WebP, hasta 4 MB por imagen. La portada aparece en Mis laboratorios.</p>
+{% if apariencia.avatar %}<img class="profile-avatar profile-avatar-preview" src="{% url 'foto_perfil' 'avatar' %}" alt="Tu foto de perfil">{% endif %}
+{% if apariencia.portada %}<img class="profile-cover-preview" src="{% url 'foto_perfil' 'portada' %}" alt="Tu portada">{% endif %}
+<div class="form-grid">{% include 'mantenimiento_campo.html' with field=preferencias.avatar %}{% include 'mantenimiento_campo.html' with field=preferencias.portada %}</div></section>
+<div class="actions"><button>Guardar mi perfil</button><a class="button secondary" href="{% url 'inicio' %}">Volver al inicio</a></div></form>
+{% endblock %}

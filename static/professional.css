@@ -1,0 +1,23 @@
+/* Estados semánticos independientes de la personalización institucional. */
+:root{--status-green:#246344;--status-green-bg:#e9f5ed;--status-red:#a23846;--status-red-bg:#fcecef;--status-amber:#865e18;--status-amber-bg:#fff3d8;--status-blue:#355f99;--status-blue-bg:#eaf1fc;--status-neutral:#69716d;--status-neutral-bg:#f0f2ef}
+.badge:not(.maintenance-type){display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border:1px solid transparent;font-size:11px;line-height:1.4;font-weight:550;letter-spacing:.01em;border-radius:999px;background:var(--status-neutral-bg);color:var(--status-neutral)}
+.badge:not(.maintenance-type)::before{content:"";width:6px;height:6px;flex-shrink:0;border-radius:50%;background:currentColor;opacity:.8}
+.badge[data-state=success]{background:var(--status-green-bg);color:var(--status-green);border-color:#d6eadd}
+.badge[data-state=danger]{background:var(--status-red-bg);color:var(--status-red);border-color:#f1d7dd}
+.badge[data-state=warning]{background:var(--status-amber-bg);color:var(--status-amber);border-color:#f1e3bd}
+.badge[data-state=progress]{background:var(--status-blue-bg);color:var(--status-blue);border-color:#d7e3f5}
+.badge[data-state=neutral]{background:var(--status-neutral-bg);color:var(--status-neutral);border-color:#e2e6e0}
+.metric{border-top:3px solid #d9ded8;box-shadow:0 3px 18px #253e2e04}.metric strong{font-variant-numeric:tabular-nums;letter-spacing:-.04em;font-weight:650}
+.metric[data-state=success]{border-top-color:#64a582;background:linear-gradient(180deg,#f4faf5,#fff 60%)}.metric[data-state=success] strong{color:var(--status-green)}
+.metric[data-state=danger]{border-top-color:#d18a96;background:linear-gradient(180deg,#fdf4f5,#fff 60%)}.metric[data-state=danger] strong{color:var(--status-red)}
+.metric[data-state=warning]{border-top-color:#dfbc6a;background:linear-gradient(180deg,#fefaf0,#fff 60%)}.metric[data-state=warning] strong{color:var(--status-amber)}
+.metric[data-state=progress]{border-top-color:#8baad4}.metric[data-state=progress] strong{color:var(--status-blue)}
+select[name=estado][data-state=success]{color:var(--status-green);border-color:#b9d8c4}select[name=estado][data-state=danger]{color:var(--status-red);border-color:#e0b5bf}select[name=estado][data-state=warning]{color:var(--status-amber);border-color:#dfcda2}select[name=estado][data-state=progress]{color:var(--status-blue);border-color:#b5cbe9}
+.dashboard-card,.laboratory-card{box-shadow:0 4px 22px #263e3005;transition:border-color .18s,box-shadow .18s,background .18s}.dashboard-card:hover,.laboratory-card:hover{box-shadow:0 8px 28px #263e300c;border-color:#dacac5}
+.dashboard-card img{background:#f7f8f5;border-radius:16px;padding:8px}.dashboard-card strong{font-weight:600;letter-spacing:-.02em}.dashboard-card .card-arrow{color:#9a9c92;transition:color .18s}.dashboard-card:hover .card-arrow{color:var(--personal-ink)}
+.panel{box-shadow:0 4px 22px #263e3004}.institution-header{box-shadow:0 6px 28px #263e3005}.section-label{font-weight:600;letter-spacing:-.02em}
+table th{font-weight:600;letter-spacing:.045em;padding-top:16px;padding-bottom:16px}table td{line-height:1.65;border-bottom-color:#eef0eb}table tbody tr{transition:background .12s}table tbody tr:hover{background:#f7f8f4}.scroll{border-radius:14px}.pagination{font-variant-numeric:tabular-nums}
+button,.button{font-weight:600;letter-spacing:-.01em}button:disabled{opacity:.5;cursor:not-allowed;box-shadow:none}.form-field input,.form-field select,.form-field textarea{transition:border-color .15s,box-shadow .15s}.form-field input:focus,.form-field select:focus,.form-field textarea:focus{box-shadow:0 0 0 4px #2876490a}
+.sidebar nav>a{transition:background .15s,color .15s}.nav-count{font-variant-numeric:tabular-nums;box-shadow:0 2px 7px #77551b15}
+@media(prefers-reduced-motion:reduce){.dashboard-card,.laboratory-card,.dashboard-card .card-arrow,table tbody tr,.sidebar nav>a,.form-field input,.form-field select,.form-field textarea{transition:none}}
+@media print{.badge{print-color-adjust:exact;-webkit-print-color-adjust:exact}.panel,.metric{box-shadow:none}}

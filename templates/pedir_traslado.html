@@ -1,0 +1,4 @@
+{% extends 'base.html' %}{% block content %}
+<div class="heading"><div><h1>Pedir traslado</h1><p class="subtitle">Solicita este equipo para un laboratorio a tu cargo.</p></div><a class="button secondary" href="{% url 'detalle' equipo.pk %}">Volver al equipo</a></div>
+<section class="panel form-panel"><h2>{{ equipo.descripcion }}</h2><dl><dt>Serial</dt><dd>{{ equipo.serial|default:'Sin serial' }}</dd><dt>Origen</dt><dd>{{ equipo.laboratorio }}</dd><dt>Responsable</dt><dd>{{ equipo.laboratorio.responsable|default:'Sin asignar' }}</dd></dl><p class="notice">El responsable del origen debe aprobar. Mientras responde, el equipo quedará en proceso de traslado.</p><form method="post">{% csrf_token %}{{ form.as_p }}<button>Enviar solicitud</button></form></section>
+{% endblock %}

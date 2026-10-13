@@ -1,0 +1,6 @@
+{% extends 'base.html' %}{% block content %}
+<div class="heading"><div><div class="eyebrow">SOLICITUD {{ solicitud.codigo }}</div><h1>Eliminar solicitud</h1><p class="subtitle">{{ solicitud.equipo_nombre }}</p></div></div>
+<section class="panel form-panel"><p>La solicitud <strong>{{ solicitud.codigo }}</strong> se eliminará de forma permanente. Su número no volverá a utilizarse.</p>
+{% if total_mantenimientos %}<p>Se conservarán los {{ total_mantenimientos }} mantenimientos registrados y la referencia al número original.</p>{% endif %}
+<form method="post">{% csrf_token %}<input type="hidden" name="version" value="{{ solicitud.version }}"><p><label><input type="checkbox" name="confirmar" value="si" required> Confirmo que quiero eliminar esta solicitud.</label></p><div class="actions"><button class="danger">Eliminar solicitud</button><a class="button secondary" href="{% url 'detalle_solicitud' solicitud.pk %}">Volver sin eliminar</a></div></form></section>
+{% endblock %}

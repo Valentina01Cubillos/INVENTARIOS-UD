@@ -1,0 +1,1 @@
+{% if widget.is_initial %}<p class="muted">Fotografía cargada.</p>{% if not widget.required %}<label><input type="checkbox" name="{{ widget.checkbox_name }}" id="{{ widget.checkbox_id }}"{% if widget.attrs.disabled %} disabled{% endif %}> Quitar fotografía</label>{% endif %}{% endif %}<input type="{{ widget.type }}" name="{{ widget.name }}"{% include "perfil_input_attrs.html" %}>

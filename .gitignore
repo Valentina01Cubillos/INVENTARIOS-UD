@@ -1,0 +1,14 @@
+.venv/
+.env
+__pycache__/
+*.sqlite3
+media/
+staticfiles/
+simulacion.json
+importacion.json
+backups/
+private_media/
+simulacion_completa.json
+importacion_completa.json
+.runtime/
+.validation/
