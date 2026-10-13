@@ -1,0 +1,11 @@
+**/.venv
+**/.env
+**/__pycache__
+**/*.sqlite3
+**/backups
+**/private_media
+**/validacion
+**/staticfiles
+**/simulacion*.json
+**/importacion*.json
+**/.runtime
