@@ -56,6 +56,8 @@ Después de reiniciar Windows, `manage.py` inicia automáticamente la instancia 
 
 Ese script instala dependencias faltantes, aplica migraciones, configura roles y arranca el servidor local. Mantenga la terminal abierta. El servidor de desarrollo se utiliza para pruebas.
 
+Para compartir la aplicacion en la red local, ejecute `Iniciar_LabManager.cmd`. Si `.venv` no existe, el lanzador lo crea e instala `requirements.txt` (requiere Python para Windows). Si no existe `.env`, copia `.env.example` y se detiene para que configure la clave Django y la conexion PostgreSQL antes de volver a iniciarlo. La red local requiere PostgreSQL; mantenga la ventana abierta y use la URL de red que muestra el lanzador.
+
 Para recuperar acceso:
 
 ```powershell

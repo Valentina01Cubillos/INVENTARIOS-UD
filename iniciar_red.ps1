@@ -2,7 +2,18 @@ param([string]$IpServidor, [ValidateRange(1,65535)][int]$Puerto=8000)
 $ErrorActionPreference='Stop'
 Set-Location -LiteralPath $PSScriptRoot
 $taskPython=Join-Path $PSScriptRoot '.venv\Scripts\python.exe'
-if (-not (Test-Path -LiteralPath $taskPython)) { throw 'Prepare el entorno .venv en este computador siguiendo README.md.' }
+if (-not (Test-Path -LiteralPath $taskPython)) {
+    if (-not (Get-Command py -ErrorAction SilentlyContinue)) { throw 'Instale Python para Windows y vuelva a ejecutar este lanzador.' }
+    py -m venv .venv
+    if ($LASTEXITCODE -ne 0) { throw 'No se pudo crear el entorno .venv.' }
+}
+& $taskPython -m pip install -r requirements.txt
+if ($LASTEXITCODE -ne 0) { throw 'No se pudieron instalar las dependencias de Proyecto_Web.' }
+if (-not (Test-Path -LiteralPath '.env')) {
+    Copy-Item -LiteralPath '.env.example' -Destination '.env'
+    Write-Host 'Se creo .env desde .env.example. Configure la clave Django y PostgreSQL; luego ejecute este lanzador de nuevo.'
+    exit 1
+}
 if (-not $IpServidor) {
     $taskInterfaces=Get-NetIPInterface -AddressFamily IPv4
     $taskRoute=Get-NetRoute -DestinationPrefix '0.0.0.0/0' | Sort-Object { $taskIndex=$_.InterfaceIndex; $_.RouteMetric + ($taskInterfaces | Where-Object InterfaceIndex -eq $taskIndex | Select-Object -First 1).InterfaceMetric } | Select-Object -First 1
